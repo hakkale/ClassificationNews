@@ -56,7 +56,7 @@ def preprocessing(text):
 
 # Getting preprocessed train dataset
 preprocessed = pd.Series([], dtype=pd.StringDtype())
-preprocessed_test = pd.Series([], dtype=pd.StringDtype())
+# preprocessed_test = pd.Series([], dtype=pd.StringDtype())
 for elem in X_train:
     elem = pd.Series(preprocessing(elem))
     preprocessed = preprocessed.append(elem, ignore_index=True)
